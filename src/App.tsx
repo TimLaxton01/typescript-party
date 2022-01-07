@@ -12,7 +12,14 @@ interface IState {
 }
 
 function App() {
-  const [people, setPeople] = useState<IState["people"]>([]);
+  const [people, setPeople] = useState<IState["people"]>([
+    {
+      name: "Robert Crumb",
+      url: "https://13thdimension.com/wp-content/uploads/2015/08/Crumb003.jpg",
+      age: 78,
+      note: "Keep on trucking",
+    },
+  ]);
 
   return (
     <div className='App'>
